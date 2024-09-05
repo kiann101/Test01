@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style/normilize.css">
+  <link rel="stylesheet" href="style/main.css">
+  <title>freefit</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header-wrapper">
+        <a href="#" class="logo-wrapper">
+          <img src="img/logo.svg" height="30" width="97" alt="Логотип компании" class="logo-header">
+        </a>
+        <button class="burger-menu" type="button" onclick="openModal()"></button>
+        <nav class="header-nav">
+          <ul class="header-list">
+            <li class="header-item"><a href="#" class="header-link">Мероприятия</a></li>
+            <li class="header-item"><a href="#" class="header-link">Расписание</a></li>
+            <li class="header-item"><a href="#" class="header-link">О компании</a></li>
+          </ul>
+        </nav>
+        <div class="header-email-wrapper email-wrapper"><a href="mailto:info@freefit.com" class="header-email email">info@freefit.com</a></div>
+      </div>
+    </div>
+  </header>
+  <main class="main">
+    <section class="hero">
+      <div class="container">
+        <div class="hero-wrapper">
+          <div class="hero-text">
+            <h1 class="hero-title">онлайн тренировки любой сложности</h1>
+            <p class="hero-count"><span>&gt;&nbsp;15</span><span>тренировок</span></p>
+            <p class="hero-info">в области спортивной <br> физиологии и нутрициологии</p>
+            <a href="#" class="hero-btn btn">Узнать подробнее</a>
+          </div>
+          <div class="hero-image-wrapper">
+            <img src="img/hero-image.png" alt="Девушка бежит" class="hero-img">
+            <div class="hero-bg"></div>
+          </div>
+          <a href="#schedule" class="hero-down"></a>
+        </div>
+      </div>
+    </section>
+    <section class="schedule" id="schedule">
+      <div class="container">
+        <div class="schedule-wrapper">
+          <div class="schedule-info">
+            <h2 class="schedule-title">Расписание тренировок</h2>
+            <p class="schedule-date"><time datetime="06-22">22</time> - <time datetime="06-28">28</time> июня</p>
+          </div>
+          <ul class="schedule-cards">
+            <li class="schedule-card card">
+              <time class="card-time" datetime="2023-06-22T10:00">22 июня, 10:00</time>
+              <img src="img/schedule/01.svg" height="65" width="65" alt="" class="card-img">
+              <h3 class="card-name">Функциональный тренинг</h3>
+            </li>
+            <li class="schedule-card card">
+              <time class="card-time" datetime="2023-06-24T10:00">24 июня, 10:00</time>
+              <img src="img/schedule/02.svg" height="85" width="42" alt="" class="card-img">
+              <h3 class="card-name">Body sculpt</h3>
+            </li>
+            <li class="schedule-card card">
+              <time class="card-time" datetime="2023-06-26T11:00">26 июня, 11:00</time>
+              <img src="img/schedule/03.svg" height="50" width="91" alt="" class="card-img">
+              <h3 class="card-name">L.A.B.</h3>
+            </li>
+            <li class="schedule-card card">
+              <time class="card-time" datetime="2023-06-23T10:00">23 июня, 10:00</time>
+              <img src="img/schedule/04.svg" height="107" width="67" alt="" class="card-img">
+              <h3 class="card-name">Силовой микс</h3>
+            </li>
+            <li class="schedule-card card">
+              <time class="card-time" datetime="2023-06-25T11:00">25 июня, 11:00</time>
+              <img src="img/schedule/05.svg" height="61" width="65" alt="" class="card-img">
+              <h3 class="card-name">Дыхательные практики</h3>
+            </li>
+            <li class="schedule-card card">
+              <time class="card-time" datetime="2023-06-27T10:00">27 июня, 10:00</time>
+              <img src="img/schedule/06.svg" height="66" width="58" alt="" class="card-img">
+              <h3 class="card-name">Комплексная разминка</h3>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="subscribe">
+      <div class="container">
+        <div class="subscribe-wrapper">
+          <div class="subscribe-title-wrapper">
+            <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
+          </div>
+          <form class="subscribe-form">
+            <input type="email" placeholder="Ваш e-mail" required>
+            <button class="subscribe-button btn" type="submit">Подписаться</button>
+            <div class="subscribe-chekbox-wrapper">
+              <input type="checkbox" id="agree" required>
+              <label for="agree">Согласен с обработкой </label><a class="subscribe-link" href="#">персональных данных</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <section class="about">
+      <div class="container">
+        <div class="about-signup">
+          <div class="about-info">
+            <h2 class="about-title">О&nbsp;компании</h2>
+            <p class="about-text">Наша компания является одной из немногих, кто предлагает фитнес услуги онлайн! Оставайтесь с&nbsp;нами и вы сами увидите, что мы проводим <br> не только онлайн-тренировки.</p>
+            <a href="#" class="about-btn btn">Записаться</a>
+          </div>
+          <div class="about-image-wrapper">
+            <div class="about-bg"></div>
+            <img width="581" height="336" src="img/about-img.jpg" alt="Тренировка" class="about-img">
+          </div>
+        </div>
+        <div class="about-features features">
+          <ul class="features-list">
+            <li class="features-item">
+              <h3 class="features-name">Экономия времени </h3>
+              <p class="features-text">Не нужно тратить время на дорогу</p>
+            </li>
+            <li class="features-item">
+              <h3 class="features-name">Индивидуальный&nbsp;подход</h3>
+              <p class="features-text">Внимание тренера пренадлежит только вам</p>
+            </li>
+            <li class="features-item">
+              <h3 class="features-name">Экономия денег</h3>
+              <p class="features-text">Средняя цена одной тренировки - 700₽</p>
+            </li>
+            <li class="features-item">
+              <h3 class="features-name">Опытный персонал</h3>
+              <p class="features-text">Стаж работы у наших тренеров от 5 лет</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-wrapper">
+        <div class="footer-content">
+          <a href="#" class="footer-logo">
+            <img src="img/logo.svg" alt="" class="footer-img">
+          </a>
+          <nav class="footer-nav">
+            <ul class="footer-list">
+              <li class="footer-item">
+                <a href="" class="footer-link">Мероприятия</a>
+              </li>
+              <li class="footer-item">
+                <a href="" class="footer-link">Расписание</a>
+              </li>
+              <li class="footer-item">
+                <a href="" class="footer-link">О компании</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="footer-emial-wrapper email-wrapper">
+            <a href="mailto:info@freefit.com" class="footer-email email">info@freefit.com</a>
+          </div>
+        </div>
+        <div class="footer-copyright">
+          <p class="copyright">&copy; <time datetime="2022">2022</time>, Все права защищены</p>
+          <div class="footer-source-wrapper">
+            <p class="footer-source">Сделано в рамках курса учебной платформы </p><a href="#">Frontend Blok</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <div class="modal" id="modal">
+    <img src="img/logo.svg" alt="Логотип компании" class="modal-logo">
+    <nav class="modal-nav">
+      <ul class="modal-list">
+        <li class="modal-item"><a href="#" class="modal-link">Мероприятия</a></li>
+        <li class="modal-item"><a href="#" class="modal-link">Расписание</a></li>
+        <li class="modal-item"><a href="#" class="modal-link">О компании</a></li>
+      </ul>
+    </nav>
+    <button type="button" class="modal-close" onclick="closeModal()"></button>
+  </div>
+  <script src="scripts/script.js"></script>
+</body>
+
+</html>
